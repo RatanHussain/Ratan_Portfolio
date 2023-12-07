@@ -1,0 +1,55 @@
+/** @format */
+
+html {
+	scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+
+}
+
+header {
+	background-image: url(coding.jpg);
+	height: 60vh;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: relative;
+}
+
+
+/*<section id="banner">
+	<div class="banner-container ">
+	  <div class="banner-contents">
+	     <h1 class="text-light">Learn Something New !!!</h1>
+         <button class="btn btn-outline-info">Tutorial</button>
+         <button class="btn btn-outline-info">Subscribe</button>
+	   </div>
+	</div>
+</section>*/
+
+.banner-container{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
