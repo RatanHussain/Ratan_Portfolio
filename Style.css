@@ -42,6 +42,16 @@ header {
 	</div>
 </section>*/
 
+.index-1{
+	z-index: 1;
+}
+.index-2{
+	z-index: 2;
+}
+.index--1{
+	z-index: -1;
+}
+
 .banner-container{
 	position: absolute;
 	display: flex;
@@ -52,4 +62,89 @@ header {
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+
+.scale-02{
+	font-size: 20px ;
+		padding: 10px 20px !important;
+		font-weight: bolder;
+		margin: auto 5px;
+		border-radius:30px 10px !important;
+		transition: all .5s;
+		&:hover{
+			background-color: greenyellow;
+			color: darkblue !important;
+			border-radius:10px 30px;
+			border-radius:10px 30px !important;
+		}
+}
+.scale-01{
+	font-size: 20px ;
+		padding: 10px 20px !important;
+		font-weight: bolder;
+		margin: auto 5px;
+		border-radius:10px 30px !important;
+		transition: all .5s;
+		&:hover{
+			background-color: greenyellow;
+			color: darkblue !important;
+			border-radius:30px 10px !important;
+		}
+}
+
+
+.text-shadow-5{
+	background-color: #ffffff9e;;
+	border-radius: 50px;
+	color: black !important;
+	padding: 15px 30px;
+	text-shadow: 0 0 5px yellowgreen;
+	font-weight: bolder;
+}
+
+
+
+@media screen and (max-width:768px) {
+	ul{
+		margin-top: 15px;
+	}
+	.list-style{
+		margin-bottom: 3px;
+		border-radius: 5px;
+		transition: all .3s;
+		background-color: rgba(255, 255, 255, 0.584);
+		& a{
+			color: black !important;
+			padding-left: 10px !important;
+			font-weight: bold;
+			text-shadow: 2px 2px 2px 20px black;
+			transition: all .3s;
+		}
+		&:hover{
+			background-color: rgba(4, 4, 112, 0.712);
+			& a{
+				color: white !important;
+			}
+
+		}
+	}
+
+}
+@media screen and (min-width:769px) {
+	.font-styles{
+		font-size: 20px ;
+		padding: 10px 20px !important;
+		font-weight: bolder;
+		margin: auto 5px;
+		border-radius:30px 10px !important;
+		transition: all .5s;
+		&:hover{
+			background-color: greenyellow;
+			color: darkblue !important;
+			border-radius:10px 30px;
+			border-radius:10px 30px !important;
+		}
+	}
+
 }
