@@ -103,6 +103,24 @@ header {
 	font-weight: bolder;
 }
 
+#featers{
+	background-color: rgb(219, 214, 214) !important;
+	padding: 30px 10px;
+	margin: 30px 0;
+	border-radius: 5px;
+	.card-section{
+		border: 2px solid rgb(235, 66, 165);
+		border-radius: 8px;
+		padding: 20px;
+		margin: 10px 0;
+		.style-icon{
+			background-color: #0DCAF0;
+			padding: 15px;
+			text-align: center;
+		}
+	}
+}
+
 
 
 @media screen and (max-width:768px) {
