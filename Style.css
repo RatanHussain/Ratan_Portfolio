@@ -20,7 +20,7 @@ h6 {
 }
 
 header {
-	background-image: url(coding.jpg);
+	background-image: url(./img/coding.jpg);
 	height: 70vh;
 	background-position: center;
 	background-attachment: fixed;
@@ -93,13 +93,31 @@ header {
 		}
 }
 
+.style-icon{
+	background-color: #0DCAF0;
+	padding: 15px;
+	text-align: center;
+}
+hr {
+    margin: 0 auto !important;
+    color: black !important;
+    background-color: white !important;
+    border: 0 !important;
+    opacity: 1 !important;
+	border: 5px dotted black !important;
+	border-bottom: none !important;
+	width: 50px !important;
+}
+hr:not([size]) {
+    height: 0 !important;
+}
 
 .text-shadow-5{
-	background-color: #ffffff9e;;
+	background-color: #ffffff75;;
 	border-radius: 50px;
 	color: black !important;
 	padding: 15px 30px;
-	text-shadow: 0 0 5px yellowgreen;
+	text-shadow: 0 0 5px rgb(255, 255, 255);
 	font-weight: bolder;
 }
 
@@ -113,17 +131,63 @@ header {
 		border-radius: 8px;
 		padding: 20px;
 		margin: 10px 0;
-		.style-icon{
-			background-color: #0DCAF0;
-			padding: 15px;
-			text-align: center;
+		transition: all .4s;
+		&:hover{
+			transform: scale(1.08);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.584);
+			background-color: #12CCE9;
+			& p{
+				font-weight: bolder;
+			}
 		}
 	}
 }
 
 
+/* Contact css here */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
 
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container-contact {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+
+
+
+
+
+/* todo responsive section */
 @media screen and (max-width:768px) {
+	.img-down{
+		margin: auto !important;
+	}
 	ul{
 		margin-top: 15px;
 	}
@@ -146,6 +210,12 @@ header {
 			}
 
 		}
+	}
+
+}
+@media screen and (max-width:900px) {
+	.img-down{
+		margin: auto !important;
 	}
 
 }
