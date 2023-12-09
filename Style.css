@@ -15,8 +15,6 @@ h3,
 h4,
 h5,
 h6 {
-
-
 }
 
 header {
@@ -31,7 +29,6 @@ header {
 	position: relative;
 }
 
-
 /*<section id="banner">
 	<div class="banner-container ">
 	  <div class="banner-contents">
@@ -42,17 +39,17 @@ header {
 	</div>
 </section>*/
 
-.index-1{
+.index-1 {
 	z-index: 1;
 }
-.index-2{
+.index-2 {
 	z-index: 2;
 }
-.index--1{
+.index--1 {
 	z-index: -1;
 }
 
-.banner-container{
+.banner-container {
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -64,56 +61,61 @@ header {
 	right: 0;
 }
 
-
-.scale-02{
-	font-size: 20px ;
-		padding: 10px 20px !important;
-		font-weight: bolder;
-		margin: auto 5px;
-		border-radius:30px 10px !important;
-		transition: all .5s;
-		&:hover{
-			background-color: greenyellow;
-			color: darkblue !important;
-			border-radius:10px 30px;
-			border-radius:10px 30px !important;
-		}
-}
-.scale-01{
-	font-size: 20px ;
-		padding: 10px 20px !important;
-		font-weight: bolder;
-		margin: auto 5px;
-		border-radius:10px 30px !important;
-		transition: all .5s;
-		&:hover{
-			background-color: greenyellow;
-			color: darkblue !important;
-			border-radius:30px 10px !important;
-		}
+table td,
+th {
+	padding: 10px;
+	font-size: 20px !important;
 }
 
-.style-icon{
-	background-color: #0DCAF0;
+.scale-02 {
+	font-size: 20px;
+	padding: 10px 20px !important;
+	font-weight: bolder;
+	margin: auto 5px;
+	border-radius: 30px 10px !important;
+	transition: all 0.5s;
+	&:hover {
+		background-color: greenyellow;
+		color: darkblue !important;
+		border-radius: 10px 30px;
+		border-radius: 10px 30px !important;
+	}
+}
+.scale-01 {
+	font-size: 20px;
+	padding: 10px 20px !important;
+	font-weight: bolder;
+	margin: auto 5px;
+	border-radius: 10px 30px !important;
+	transition: all 0.5s;
+	&:hover {
+		background-color: greenyellow;
+		color: darkblue !important;
+		border-radius: 30px 10px !important;
+	}
+}
+
+.style-icon {
+	background-color: #0dcaf0;
 	padding: 15px;
 	text-align: center;
 }
 hr {
-    margin: 0 auto !important;
-    color: black !important;
-    background-color: white !important;
-    border: 0 !important;
-    opacity: 1 !important;
+	margin: 0 auto !important;
+	color: black !important;
+	background-color: white !important;
+	border: 0 !important;
+	opacity: 1 !important;
 	border: 5px dotted black !important;
 	border-bottom: none !important;
 	width: 50px !important;
 }
 hr:not([size]) {
-    height: 0 !important;
+	height: 0 !important;
 }
 
-.text-shadow-5{
-	background-color: #ffffff75;;
+.text-shadow-5 {
+	background-color: #ffffff75;
 	border-radius: 50px;
 	color: black !important;
 	padding: 15px 30px;
@@ -121,32 +123,33 @@ hr:not([size]) {
 	font-weight: bolder;
 }
 
-#featers{
+#featers {
 	background-color: rgb(219, 214, 214) !important;
 	padding: 30px 10px;
 	margin: 30px 0;
 	border-radius: 5px;
-	.card-section{
+	.card-section {
 		border: 2px solid rgb(235, 66, 165);
 		border-radius: 8px;
 		padding: 20px;
 		margin: 10px 0;
-		transition: all .4s;
-		&:hover{
+		transition: all 0.4s;
+		&:hover {
 			transform: scale(1.08);
 			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.584);
-			background-color: #12CCE9;
-			& p{
+			background-color: #12cce9;
+			& p {
 				font-weight: bolder;
 			}
 		}
 	}
 }
 
-
 /* Contact css here */
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type='text'],
+select,
+textarea {
 	width: 100%; /* Full width */
 	padding: 12px; /* Some padding */
 	border: 1px solid #ccc; /* Gray border */
@@ -154,85 +157,86 @@ input[type=text], select, textarea {
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
 	margin-top: 6px; /* Add a top margin */
 	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-	background-color: #04AA6D;
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+	background-color: #04aa6d;
 	color: white;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-  }
+}
 
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
 	background-color: #45a049;
-  }
+}
 
-  /* Add a background color and some padding around the form */
-  .container-contact {
+/* Add a background color and some padding around the form */
+.container-contact {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
-  }
-
-
-
-
+}
 
 /* todo responsive section */
-@media screen and (max-width:768px) {
-	.img-down{
+@media screen and (max-width: 768px) {
+	#footer {
+		width: 90%;
+		margin: auto;
+		justify-content: center;
+	}
+	#newsletter1 {
+		width: 400px !important;
+	}
+	.img-down {
 		margin: auto !important;
 	}
-	ul{
+	ul {
 		margin-top: 15px;
 	}
-	.list-style{
+	.list-style {
 		margin-bottom: 3px;
 		border-radius: 5px;
-		transition: all .3s;
+		transition: all 0.3s;
 		background-color: rgba(255, 255, 255, 0.584);
-		& a{
+		& a {
 			color: black !important;
 			padding-left: 10px !important;
 			font-weight: bold;
 			text-shadow: 2px 2px 2px 20px black;
-			transition: all .3s;
+			transition: all 0.3s;
 		}
-		&:hover{
+		&:hover {
 			background-color: rgba(4, 4, 112, 0.712);
-			& a{
+			& a {
 				color: white !important;
 			}
-
 		}
 	}
-
 }
-@media screen and (max-width:900px) {
-	.img-down{
+
+@media screen and (max-width: 900px) {
+	.img-down {
 		margin: auto !important;
 	}
-
 }
-@media screen and (min-width:769px) {
-	.font-styles{
-		font-size: 20px ;
+@media screen and (min-width: 769px) {
+	.font-styles {
+		font-size: 20px;
 		padding: 10px 20px !important;
 		font-weight: bolder;
 		margin: auto 5px;
-		border-radius:30px 10px !important;
-		transition: all .5s;
-		&:hover{
+		border-radius: 30px 10px !important;
+		transition: all 0.5s;
+		&:hover {
 			background-color: greenyellow;
 			color: darkblue !important;
-			border-radius:10px 30px;
-			border-radius:10px 30px !important;
+			border-radius: 10px 30px;
+			border-radius: 10px 30px !important;
 		}
 	}
-
 }

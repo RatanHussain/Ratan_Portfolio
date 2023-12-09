@@ -1,6 +1,6 @@
 <!-- @format -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -17,7 +17,7 @@
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<div class="container">
+		<div id="home" class="container">
 			<header>
 				<nav
 					style="background-color: #12cce9"
@@ -47,7 +47,7 @@
 									<a
 										class="font-styles nav-link active"
 										aria-current="page"
-										href="#"
+										href="#home"
 										>Home</a
 									>
 								</li>
@@ -79,7 +79,7 @@
 									<a
 										class="font-styles nav-link active"
 										aria-current="page"
-										href="#"
+										href="#Contact"
 										>Contact</a
 									>
 								</li>
@@ -144,38 +144,40 @@
 					</div>
 				</div>
 
-				<div id="about-me" class="bg-light rounded p-2">
+				<div id="about-me" class="rounded p-2">
 					<h1 class="text-center fw-bolder mt-5">About Me</h1>
 					<hr />
-					<div class="row">
-						<div class="col-sm-12 col-lg-5 mt-5 ms-3">
-							<i
-								class="far fa-user fa-3x text-center style-icon rounded-circle p-3 ms-5"></i>
-							<h3 class="fw-bold mt-3">Personal Info</h3>
-							<p class="mt-4 mb-0 fw-bold">Name : MD RATAN MIA,</p>
-							<p class="m-0 fw-bolder">Profession : Web Developers,</p>
-							<p class="m-0 fw-bolder">
-								Current location : Riyadh, Saudi Arabia,
-							</p>
-							<p class="m-0 fw-bolder">Nationality : Bangladesh,</p>
-							<p class="m-0 fw-bolder">
-								<a href="#"
-									><button
-										style="width: 300px"
-										class="mt-3 btn btn-outline-info fs-5">
-										My Projects
-									</button></a
-								>
-							</p>
-						</div>
-						<div class="col-lg-2"></div>
-						<div class="col-lg-4">
-							<div>
-								<img
-									style="height: 500px; width: auto; margin-top: -100px"
-									class="img-fluid d-block img-down"
-									src="./img/Ratan-half.png"
-									alt="" />
+					<div id="hero-section">
+						<div class="row">
+							<div class="col-sm-12 col-lg-5 mt-5 ms-3">
+								<i
+									class="far fa-user fa-3x text-center style-icon rounded-circle p-3 ms-5"></i>
+								<h3 class="fw-bold mt-3">Personal Info</h3>
+								<p class="mt-4 mb-0 fw-bold">Name : MD RATAN MIA,</p>
+								<p class="m-0 fw-bolder">Profession : Web Developers,</p>
+								<p class="m-0 fw-bolder">
+									Current location : Riyadh, Saudi Arabia,
+								</p>
+								<p class="m-0 fw-bolder">Nationality : Bangladesh,</p>
+								<p class="m-0 fw-bolder">
+									<a href="#"
+										><button
+											style="width: 300px"
+											class="mt-3 btn btn-outline-info fs-5">
+											My Projects
+										</button></a
+									>
+								</p>
+							</div>
+							<div class="col-lg-2"></div>
+							<div class="col-lg-4">
+								<div id="">
+									<img
+										style="height: 500px; width: auto; margin-top: -100px"
+										class="img-fluid d-block img-down"
+										src="./img/hero.png"
+										alt="" />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -190,7 +192,7 @@
 							<i
 								class="fa-solid fa-book text-center m-auto fa-3x style-icon rounded-circle"></i>
 							<h3>Knowledge</h3>
-							<table class="mx-auto mt-5 fa-2x justify-content-center">
+							<table class="mx-auto mt-5 justify-content-center">
 								<!-- <tr>
 								<th class="text-start"><span><i class="fa-brands fa-react"></i></span> React</td>
 								<td><i class="fa-solid fa-star"></i></td>
@@ -202,6 +204,17 @@
 								<tr>
 									<th class="text-start">
 										<span><i class="fa-brands fa-js"></i></span> JavaScript
+									</th>
+									<td><i class="fa-solid fa-star"></i></td>
+									<td><i class="fa-solid fa-star"></i></td>
+									<td><i class="fa-solid fa-star"></i></td>
+									<td><i class="fa-solid fa-star-half-stroke"></i></td>
+									<td><i class="fa-regular fa-star"></i></td>
+								</tr>
+								<tr>
+									<th class="text-start">
+										<span><i class="fa-brands fa-github"></i></span> Git &
+										Github
 									</th>
 									<td><i class="fa-solid fa-star"></i></td>
 									<td><i class="fa-solid fa-star"></i></td>
@@ -465,7 +478,8 @@
 				</div>
 
 				<!-- Contact here -->
-				<div class="container-contact mt-5">
+				<div id="Contact" class="container-contact mt-5">
+					<h1 class="text-center p-4 pt-5 fw-bold fa-3x">Contact Us</h1>
 					<form action="action_page.php">
 						<label for="fname">First Name</label>
 						<input
@@ -611,90 +625,83 @@
 
 		<div class="b-example-divider"></div>
 
-		<div class="container">
+		<div id="footer" class="container">
 			<footer class="py-5">
 				<div class="row">
-					<div class="col-12 col-md-2">
+					<div class="col-12 col-md-3">
 						<h5>Section</h5>
 						<ul class="nav flex-column">
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Home</a>
+								<a href="#home" class="nav-link p-0 text-muted">Home</a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Features</a>
+								<a href="#projects" class="nav-link p-0 text-muted">Features</a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Pricing</a>
+								<a href="#skill" class="nav-link p-0 text-muted">Skills</a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">FAQs</a>
+								<a href="#Contact" class="nav-link p-0 text-muted">FAQs</a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">About</a>
+								<a href="#about-me" class="nav-link p-0 text-muted">About</a>
 							</li>
 						</ul>
 					</div>
 
-					<div class="col-12 col-md-2 text-sm-end my-5">
-						<h5>Section</h5>
-						<ul class="nav flex-column">
+					<div class="col-12 col-md-3">
+						<h5 class="ps-5">Social media</h5>
+						<ul style="width: 200px;" class="nav">
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Home</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-brands fa-facebook"></i
+								></a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Features</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-brands fa-linkedin"></i
+								></a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Pricing</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-brands fa-instagram"></i
+								></a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">FAQs</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-solid fa-phone"></i
+								></a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">About</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-12 col-md-2">
-						<h5>Section</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Home</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-brands fa-github"></i
+								></a>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Features</a>
-							</li>
-							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">Pricing</a>
-							</li>
-							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">FAQs</a>
-							</li>
-							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0 text-muted">About</a>
+								<a href="#" class="nav-link p-0 text-muted"
+									><i class="fa-2x p-3 fa-brands fa-twitter"></i
+								></a>
 							</li>
 						</ul>
 					</div>
 
-					<div class="col-12 col-md-4 offset-1 mt-2">
+					<div class="col-12 col-md-4">
 						<form>
 							<h5>Subscribe to our newsletter</h5>
 							<p>Monthly digest of whats new and exciting from us.</p>
-							<div class="d-flex w-100 gap-2">
+							<div class="d-block d-md-flex w-100 gap-2">
 								<label for="newsletter1" class="visually-hidden"
 									>Email address</label
 								>
-								<div>
-									<input
-										id="newsletter1"
-										type="text"
-										class="form-control d-sm-block"
-										placeholder="Email address" />
-									<button class="btn btn-primary d-sm-block" type="button">
-										Subscribe
-									</button>
-								</div>
+								<input
+									id="newsletter1"
+									type="text"
+									class="form-control"
+									style="width: 100%;"
+									placeholder="Email address" />
+								<button style="height: 50px !important; margin-top: 5px;" class="btn btn-primary" type="button">
+									Subscribe
+								</button>
 							</div>
 						</form>
 					</div>
@@ -718,10 +725,8 @@
 						<li class="ms-3">
 							<a class="link-dark" href="#"
 								><svg class="bi" width="24" height="24">
-									<use xlink:href="#facebook" />
-									fd
-								</svg></a
-							>
+									<use xlink:href="#facebook" /></svg
+							></a>
 						</li>
 					</ul>
 				</div>
