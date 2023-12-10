@@ -4,19 +4,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
-
-body {
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
 header {
 	background-image: url(./img/coding.jpg);
 	height: 70vh;
@@ -29,21 +16,11 @@ header {
 	position: relative;
 }
 
-/*<section id="banner">
-	<div class="banner-container ">
-	  <div class="banner-contents">
-	     <h1 class="text-light">Learn Something New !!!</h1>
-         <button class="btn btn-outline-info">Tutorial</button>
-         <button class="btn btn-outline-info">Subscribe</button>
-	   </div>
-	</div>
-</section>*/
-
 .index-1 {
 	z-index: 1;
 }
 .index-2 {
-	z-index: 2;
+	z-index: 2 !important;
 }
 .index--1 {
 	z-index: -1;
@@ -60,6 +37,46 @@ header {
 	left: 0;
 	right: 0;
 }
+
+.about-ratan{
+	text-decoration: none;
+	color: black;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+#face:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: #0866FF;
+}
+#ins:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: #EC4842;
+}
+#phone:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: #47B36C;
+}
+#git:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: black;
+}
+#tw:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: #1DA1F2;
+}
+#linkdin:hover{
+	transition: all .4s;
+	transform: scale(1.12);
+	color: #0077B0;
+}
+
 
 table td,
 th {
@@ -202,6 +219,20 @@ input[type='submit']:hover {
 		border-radius: 10px 30px !important;
 	}
 }
+
+#hover{
+	transition: all .4s !important;
+	&:hover{
+		transition: all .4s !important;
+		transform: scale(1.05) !important;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .5) !important;
+	}
+}
+
+
+
+
+
 
 /* todo responsive section */
 @media screen and (max-width: 768px) {
