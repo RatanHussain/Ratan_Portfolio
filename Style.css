@@ -6,7 +6,7 @@ html {
 
 /* header here */
 header {
-	background-image: url(./img/coding.jpg);
+	background-image: url(img/coding.jpg);
 	height: 70vh;
 	background-position: center;
 	background-attachment: fixed;
