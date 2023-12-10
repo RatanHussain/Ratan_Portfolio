@@ -5,7 +5,7 @@ html {
 }
 
 /* header here */
-header {
+#banner {
 	background-image: url(./img/coding.jpg);
 	height: 70vh;
 	background-position: center;
@@ -15,6 +15,10 @@ header {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	position: relative;
+}
+
+header{
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .index-1 {
@@ -199,34 +203,55 @@ input[type='submit']:hover {
 /* media icon here */
 #face:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: #0866ff;
 }
 #ins:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: #ec4842;
 }
 #phone:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: #47b36c;
 }
 #git:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: black;
 }
 #tw:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: #1da1f2;
 }
 #linkdin:hover {
 	transition: all 0.4s;
-	transform: scale(1.12);
+	transform: scale(2);
 	color: #0077b0;
 }
+#footer{
+	background-image: url(./img/footer.jpg);
+	background-position: center;
+	background-repeat: no-repeat ;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	padding: 0 10%;
+
+}
+.hovered{
+	transition: all .4s;
+	font-size: 20px;
+	&:hover{
+		/* transform: scale(1.6); */
+		color: white !important;
+		opacity: 1 !important;
+	}
+}
+
+
 
 /* responsive section */
 @media screen and (max-width: 768px) {
