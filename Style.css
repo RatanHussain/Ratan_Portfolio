@@ -230,6 +230,14 @@ input[type='submit']:hover {
 
 /* responsive section */
 @media screen and (max-width: 768px) {
+	body,html{
+		padding: 0 !important;
+	}
+	#home{
+		width: 100% !important;
+		margin:  0 auto !important;
+	}
+
 	#footer {
 		width: 90%;
 		margin: auto;
